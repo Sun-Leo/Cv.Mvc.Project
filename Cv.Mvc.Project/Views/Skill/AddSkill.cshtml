@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "AddSkill";
+    Layout = "~/Views/Admin_Layout.cshtml";
+}
+
+<h2>Yetenek Ekle</h2>
+<br />
+<form method="post">
+    <div class="form-row">
+        <div class="control-group col-sm-12">
+            <input type="text" class="form-control p-4" name="Yetenek" placeholder="Yetenek"
+                   required="required" data-validation-required-message="Lütfen Yetenek Girin.." />
+            <p class="help-block text-danger"></p>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-outline-dark" type="submit" id="sendMessageButton">
+
+            Ekle
+
+        </button>
+    </div>
+       
+</form>
+

@@ -1,0 +1,30 @@
+﻿@using Cv.Mvc.Project.Models
+@model List<TblProject>
+
+<div class="container-fluid pt-5" id="service">
+  
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projeler</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Projelerim</h1>
+        </div>
+      
+        <div class="row pb-3">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="@item.Görsel"></i>
+                        <h4 class="font-weight-bold m-0">@item.ProjeAdı</h4>
+                    </div>
+                    <p>@item.Açıklama</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="https://github.com/Sun-Leo">Read More</a>
+                </div>
+            }
+
+
+            </div>
+        
+        </div>
+    
+    </div>

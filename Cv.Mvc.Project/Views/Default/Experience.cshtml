@@ -1,0 +1,19 @@
+﻿@using Cv.Mvc.Project.Models
+@model List<TblExperience>
+<div class="col-lg-6">
+    <h3 class="mb-4">Deneyim</h3>
+
+    @foreach (var item in Model)
+    {
+        <div class="border-left border-primary pt-2 pl-4 ml-2">
+            <div class="position-relative mb-4">
+                <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                <h5 class="font-weight-bold mb-1">@item.Başlık</h5>
+                <p class="mb-2"><strong>@item.Altbaşlık</strong> | <small>@item.Tarih</small></p>
+                <p>@item.Açıklama</p>
+            </div>
+
+        </div>
+    }
+
+</div>

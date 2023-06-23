@@ -1,0 +1,26 @@
+﻿@model Cv.Mvc.Project.Models.TblExperience
+@{
+    ViewBag.Title = "GetExperience";
+    Layout = "~/Views/Admin_Layout.cshtml";
+}
+
+<h2>Güncelle</h2>
+<br />
+<form method="post">
+    @Html.Label("ID")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Firma")
+    @Html.TextBoxFor(x => x.Başlık, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Görev")
+    @Html.TextBoxFor(x => x.Altbaşlık, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Açıklama")
+    @Html.TextAreaFor(x => x.Açıklama, new { @class = "form-control p-3" })
+    <br />
+    <button class="btn btn-outline-dark">Güncelle</button>
+</form>

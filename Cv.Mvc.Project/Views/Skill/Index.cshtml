@@ -1,0 +1,61 @@
+﻿@using Cv.Mvc.Project.Models
+@model List<TblSkılls>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Admin_Layout.cshtml";
+}
+
+<br />
+<div class="col-lg-12">
+    <div class="ibox ">
+        <div class="ibox-title">
+            <h5>Yeteneklerim</h5>
+            <div class="ibox-tools">
+                <a class="collapse-link">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-wrench"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li>
+                        <a href="#" class="dropdown-item">Config option 1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-item">Config option 2</a>
+                    </li>
+                </ul>
+                <a class="close-link">
+                    <i class="fa fa-times"></i>
+                </a>
+            </div>
+        </div>
+        <div class="ibox-content">
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Yetenek</th>
+                        <th>Sil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.ID</td>
+                            <td>@item.Yetenek</td>
+                            <td><a href="/Skill/DeleteSkill/@item.ID" class="btn btn-outline-danger">Sil</a></td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+            <a href="/Skill/AddSkill/" class="btn btn-outline-dark">Yetenek Ekle</a>
+        </div>
+    </div>
+</div>
+

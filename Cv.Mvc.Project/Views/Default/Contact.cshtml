@@ -1,0 +1,48 @@
+﻿
+<div class="container-fluid py-5" id="contact">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">İletişim</h1>
+            <h1 class="position-absolute text-uppercase text-primary">İletişime Geç</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-form text-center">
+                    <div id="success"></div>
+                    <form method="post">
+                        <div class="form-row">
+                            <div class="control-group col-sm-6">
+                                <input type="text" class="form-control p-4"  name="AdSoyad" placeholder="Ad Soyad"
+                                       required="required" data-validation-required-message="Lütfen Ad Soyad Girin.." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group col-sm-6">
+                                <input type="email" class="form-control p-4"  name="Mail" placeholder="Mail Adresi"
+                                       required="required" data-validation-required-message="Lütfen Mail Adresi Girin" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control p-4"  name="Konu" placeholder="Konu"
+                                   required="required" data-validation-required-message="Bir Konu Girin" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control py-3 px-4" rows="5"  name="Mesaj" placeholder="Mesaj"
+                                      required="required"
+                                      data-validation-required-message="Mesajınızı Girin"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">
+                                
+                                Gönder
+                                
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
