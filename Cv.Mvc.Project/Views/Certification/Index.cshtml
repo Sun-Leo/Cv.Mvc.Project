@@ -1,16 +1,17 @@
 ﻿@using Cv.Mvc.Project.Models
-@model List<TblExperience>
+@model List<TblCertification>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Admin_Layout.cshtml";
 }
+
 
 <div class="row">
 
     <div class="col-lg-12">
         <div class="ibox ">
             <div class="ibox-title">
-                <h5>Deneyimler</h5>
+                <h5>Sertifikalar</h5>
                 <div class="ibox-tools">
                     <a class="collapse-link">
                         <i class="fa fa-chevron-up"></i>
@@ -41,9 +42,8 @@
                             <tr>
 
                                 <th>#</th>
-                                <th>Firma Adı </th>
+                                <th>Başlık</th>
                                 <th>Açıklama </th>
-                                <th>Tarih</th>
                                 <th>Sil</th>
                                 <th>Düzenle</th>
                             </tr>
@@ -55,16 +55,15 @@
                                     <td>@item.ID</td>
                                     <td>@item.Başlık</td>
                                     <td>@item.Açıklama</td>
-                                    <td>@item.Tarih</td>
-                                    <td><a href="/Experience/DeleteExperience/@item.ID" class="btn btn-danger">Sil</a></td>
-                                    <td><a href="/Experience/GetExperience/@item.ID" class="btn btn-dark">Düzenle</a></td>
+                                    <td><a href="/Certification/DeleteCertification/@item.ID" class="btn btn-danger">Sil</a></td>
+                                    <td><a href="/Certification/GetCertification/@item.ID" class="btn btn-dark">Düzenle</a></td>
                                 </tr>
                             }
 
 
                         </tbody>
                     </table>
-                    <a href="/Experience/AddExperience/" class="btn btn-dark">Deneyim Ekle</a>
+                    <a href="/Certification/AddCertification/" class="btn btn-dark">Sertifika Ekle</a>
                 </div>
 
             </div>

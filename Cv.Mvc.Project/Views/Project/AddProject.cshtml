@@ -1,0 +1,29 @@
+﻿@model Cv.Mvc.Project.Models.TblProject
+@{
+    ViewBag.Title = "AddProject";
+    Layout = "~/Views/Admin_Layout.cshtml";
+}
+
+<form method="post">
+    <div class="form-row">
+        <div class="control-group col-sm-12">
+            <input type="text" class="form-control p-4" name="ProjeAdı" placeholder="Proje Adı"
+                   required="required" data-validation-required-message="Lütfen Proje Adı Girin.." />
+            <p class="help-block text-danger"></p>
+        </div>
+    </div>
+    <div class="control-group">
+        <textarea class="form-control py-3 px-4" rows="5" name="Açıklama" placeholder="Açıklama"
+                  required="required"
+                  data-validation-required-message="Açıklama"></textarea>
+        <p class="help-block text-danger"></p>
+    </div>
+    <div>
+        <button class="btn btn-outline-dark" type="submit" id="sendMessageButton">
+
+            Ekle
+
+        </button>
+    </div>
+</form>
+

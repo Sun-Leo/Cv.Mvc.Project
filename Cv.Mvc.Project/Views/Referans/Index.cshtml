@@ -1,5 +1,5 @@
 ﻿@using Cv.Mvc.Project.Models
-@model List<TblExperience>
+@model List<TblReferans>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Admin_Layout.cshtml";
@@ -10,7 +10,7 @@
     <div class="col-lg-12">
         <div class="ibox ">
             <div class="ibox-title">
-                <h5>Deneyimler</h5>
+                <h5>Referanslar</h5>
                 <div class="ibox-tools">
                     <a class="collapse-link">
                         <i class="fa fa-chevron-up"></i>
@@ -41,9 +41,10 @@
                             <tr>
 
                                 <th>#</th>
-                                <th>Firma Adı </th>
-                                <th>Açıklama </th>
-                                <th>Tarih</th>
+                                <th>Ad Soyad</th>
+                                <th>Unvan </th>
+                                <th>Telefon </th>
+                                <th>Mail</th>
                                 <th>Sil</th>
                                 <th>Düzenle</th>
                             </tr>
@@ -53,18 +54,19 @@
                             {
                                 <tr>
                                     <td>@item.ID</td>
-                                    <td>@item.Başlık</td>
-                                    <td>@item.Açıklama</td>
-                                    <td>@item.Tarih</td>
-                                    <td><a href="/Experience/DeleteExperience/@item.ID" class="btn btn-danger">Sil</a></td>
-                                    <td><a href="/Experience/GetExperience/@item.ID" class="btn btn-dark">Düzenle</a></td>
+                                    <td>@item.Adsoyad</td>
+                                    <td>@item.Title</td>
+                                    <td>@item.Telefon</td>
+                                    <td>@item.Email</td>
+                                    <td><a href="/Referans/DeleteReferans/@item.ID" class="btn btn-danger">Sil</a></td>
+                                    <td><a href="/Referans/GetReferans/@item.ID" class="btn btn-dark">Düzenle</a></td>
                                 </tr>
                             }
 
 
                         </tbody>
                     </table>
-                    <a href="/Experience/AddExperience/" class="btn btn-dark">Deneyim Ekle</a>
+                    <a href="/Referans/AddReferans/" class="btn btn-dark">Referans Ekle</a>
                 </div>
 
             </div>

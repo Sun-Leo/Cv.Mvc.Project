@@ -1,0 +1,38 @@
+﻿@model Cv.Mvc.Project.Models.TblReferans
+@{
+    ViewBag.Title = "AddReferans";
+    Layout = "~/Views/Admin_Layout.cshtml";
+}
+
+<form method="post">
+    <div class="form-row">
+        <div class="control-group col-sm-6">
+            <input type="text" class="form-control p-4" name="Adsoyad" placeholder="AdSoyad"
+                   required="required" data-validation-required-message="Lütfen Ad SoyadGirin.." />
+            <p class="help-block text-danger"></p>
+        </div>
+        <div class="control-group col-sm-6">
+            <input type="text" class="form-control p-4" name="Title" placeholder="Unvan"
+                   required="required" data-validation-required-message="Lütfen Unvan Girin" />
+            <p class="help-block text-danger"></p>
+        </div>
+    </div>
+    <div class="control-group">
+        <input type="text" class="form-control p-4" name="Telefon" placeholder="Telefon"
+               required="required" data-validation-required-message="Bir Telefon Girin" />
+        <p class="help-block text-danger"></p>
+    </div>
+    <div class="control-group">
+        <input type="email" class="form-control p-4" name="Email" placeholder="Mail"
+               required="required" data-validation-required-message="Bir Mail Girin" />
+        <p class="help-block text-danger"></p>
+    </div>
+    <div>
+        <button class="btn btn-outline-dark" type="submit" id="sendMessageButton">
+
+            Ekle
+
+        </button>
+    </div>
+</form>
+

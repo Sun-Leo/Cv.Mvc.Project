@@ -1,21 +1,19 @@
 ﻿
 @{
-    ViewBag.Title = "AddExperience";
+    ViewBag.Title = "AddEducation";
     Layout = "~/Views/Admin_Layout.cshtml";
 }
-
-<h2>Deneyim Ekle</h2>
 
 <form method="post">
     <div class="form-row">
         <div class="control-group col-sm-6">
-            <input type="text" class="form-control p-4" name="Başlık" placeholder="Firma"
-                   required="required" data-validation-required-message="Lütfen Firma Adı Girin.." />
+            <input type="text" class="form-control p-4" name="Altbaşlık" placeholder="Okul"
+                   required="required" data-validation-required-message="Lütfen Okul Adı Girin.." />
             <p class="help-block text-danger"></p>
         </div>
         <div class="control-group col-sm-6">
-            <input type="text" class="form-control p-4" name="Altbaşlık" placeholder="Görev"
-                   required="required" data-validation-required-message="Lütfen Görevinizi Girin" />
+            <input type="text" class="form-control p-4" name="Altbaşlık2" placeholder="Bölüm"
+                   required="required" data-validation-required-message="Lütfen Bölüm Girin" />
             <p class="help-block text-danger"></p>
         </div>
     </div>
@@ -25,7 +23,7 @@
         <p class="help-block text-danger"></p>
     </div>
     <div class="control-group">
-        <textarea class="form-control py-3 px-4" rows="5"  name="Açıklama" placeholder="Açıklama"
+        <textarea class="form-control py-3 px-4" rows="5" name="Açıklama" placeholder="Açıklama"
                   required="required"
                   data-validation-required-message="Açıklama"></textarea>
         <p class="help-block text-danger"></p>

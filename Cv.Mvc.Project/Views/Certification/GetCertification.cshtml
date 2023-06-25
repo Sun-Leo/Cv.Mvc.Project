@@ -1,0 +1,21 @@
+﻿@model Cv.Mvc.Project.Models.TblCertification
+@{
+    ViewBag.Title = "GetCertification";
+    Layout = "~/Views/Admin_Layout.cshtml";
+}
+
+<h2>Sertifa Düzenle</h2>
+<br />
+<form method="post">
+    @Html.Label("ID")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Sertifika Adı")
+    @Html.TextBoxFor(x => x.Başlık, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Açıklama")
+    @Html.TextAreaFor(x => x.Açıklama, new { @class = "form-control p-3" })
+    <br />
+    <button class="btn btn-outline-dark">Güncelle</button>
+</form>
+

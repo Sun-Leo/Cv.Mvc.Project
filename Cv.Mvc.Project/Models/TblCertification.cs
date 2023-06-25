@@ -11,10 +11,12 @@ namespace Cv.Mvc.Project.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class TblCertification
     {
         public int ID { get; set; }
+        [Required(ErrorMessage ="Boş Geçemezsiniz")]
         public string Başlık { get; set; }
         public string Açıklama { get; set; }
     }

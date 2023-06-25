@@ -1,0 +1,25 @@
+﻿@model Cv.Mvc.Project.Models.TblReferans
+@{
+    ViewBag.Title = "GetReferans";
+    Layout = "~/Views/Admin_Layout.cshtml";
+}
+
+<form method="post">
+    @Html.Label("ID")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("AdSoyad")
+    @Html.TextBoxFor(x => x.Adsoyad, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Unvan")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Telefon")
+    @Html.TextBoxFor(x => x.Telefon, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Mail")
+    @Html.TextAreaFor(x => x.Email, new { @class = "form-control p-3" })
+    <br />
+    <button class="btn btn-outline-dark">Güncelle</button>
+</form>
+

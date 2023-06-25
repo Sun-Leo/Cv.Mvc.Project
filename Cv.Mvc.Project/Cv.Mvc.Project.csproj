@@ -128,10 +128,15 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\CertificationController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\EducationController.cs" />
     <Compile Include="Controllers\ExperienceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProjectController.cs" />
+    <Compile Include="Controllers\ReferansController.cs" />
     <Compile Include="Controllers\SkillController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1270,6 +1275,7 @@
     <Content Include="Template\AdminTeması\img\gallery\8s.jpg" />
     <Content Include="Template\AdminTeması\img\gallery\9.jpg" />
     <Content Include="Template\AdminTeması\img\gallery\9s.jpg" />
+    <Content Include="Template\AdminTeması\img\Gizem.jpg" />
     <Content Include="Template\AdminTeması\img\headphones.jpg" />
     <Content Include="Template\AdminTeması\img\html_logo.png" />
     <Content Include="Template\AdminTeması\img\landing\avatar1.jpg" />
@@ -1733,6 +1739,7 @@
     <Content Include="Template\CvTemp\img\blog-1.jpg" />
     <Content Include="Template\CvTemp\img\blog-2.jpg" />
     <Content Include="Template\CvTemp\img\blog-3.jpg" />
+    <Content Include="Template\CvTemp\img\caner bey.jpeg" />
     <Content Include="Template\CvTemp\img\Gizem.jpg" />
     <Content Include="Template\CvTemp\img\MuratYücedağ.jpeg" />
     <Content Include="Template\CvTemp\img\portfolio-1.jpg" />
@@ -1994,6 +2001,19 @@
     <Content Include="Views\Experience\GetExperience.cshtml" />
     <Content Include="Views\Skill\Index.cshtml" />
     <Content Include="Views\Skill\AddSkill.cshtml" />
+    <Content Include="Views\Education\Index.cshtml" />
+    <Content Include="Views\Education\AddEducation.cshtml" />
+    <Content Include="Views\Education\GetEducation.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Certification\Index.cshtml" />
+    <Content Include="Views\Certification\AddCertification.cshtml" />
+    <Content Include="Views\Certification\GetCertification.cshtml" />
+    <Content Include="Views\Referans\Index.cshtml" />
+    <Content Include="Views\Referans\AddReferans.cshtml" />
+    <Content Include="Views\Referans\GetReferans.cshtml" />
+    <Content Include="Views\Project\Index.cshtml" />
+    <Content Include="Views\Project\AddProject.cshtml" />
+    <Content Include="Views\Project\GetProject.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

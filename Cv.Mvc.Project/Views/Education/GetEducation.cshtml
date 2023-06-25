@@ -1,0 +1,26 @@
+﻿@model Cv.Mvc.Project.Models.TblEducation
+
+@{
+    ViewBag.Title = "GetEducation";
+    Layout = "~/Views/Admin_Layout.cshtml";
+}
+
+<form method="post">
+    @Html.Label("ID")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Okul")
+    @Html.TextBoxFor(x => x.Altbaşlık, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Bölüm")
+    @Html.TextBoxFor(x => x.Altbaşlık2, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Açıklama")
+    @Html.TextAreaFor(x => x.Açıklama, new { @class = "form-control p-3" })
+    <br />
+    <button class="btn btn-outline-dark">Güncelle</button>
+</form>
+

@@ -1,0 +1,19 @@
+﻿@model Cv.Mvc.Project.Models.TblProject
+@{
+    ViewBag.Title = "GetProject";
+    Layout = "~/Views/Admin_Layout.cshtml";
+}
+
+<form method="post">
+    @Html.Label("ID")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Proje Adı")
+    @Html.TextBoxFor(x => x.ProjeAdı, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Açıklama")
+    @Html.TextAreaFor(x => x.Açıklama, new { @class = "form-control p-3" })
+    <br />
+    <button class="btn btn-outline-dark">Güncelle</button>
+</form>
+
