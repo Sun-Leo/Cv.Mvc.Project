@@ -54,7 +54,25 @@
 
                 </tbody>
             </table>
-            <a href="/Skill/AddSkill/" class="btn btn-outline-dark">Yetenek Ekle</a>
+            <button class="btn btn-outline-dark" data-toggle="modal" data-target="#Modal1"> Yetenek Ekle</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="Modal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Yetenek Ekleme Sayfası</h3>
+            </div>
+            <form method="post" action="/Skill/AddSkill/">
+                <div class="modal-body">
+                    <label> Yetenek </label>
+                    <input type="text" class="form-control" name="Yetenek" />
+                    <br />
+                    <button class="btn btn-outline-dark">Ekle</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

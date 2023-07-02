@@ -1,0 +1,22 @@
+﻿@using Cv.Mvc.Project.Models
+@model TblAdmin
+@{
+    ViewBag.Title = "GetAdmin";
+    Layout = "~/Views/Admin_Layout.cshtml";
+}
+
+<h2>Admin Düzenle</h2>
+<br />
+<form method="post">
+    @Html.Label("ID")
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Kullanıcı Adı")
+    @Html.TextBoxFor(x => x.KullanıcıAdı, new { @class = "form-control p-3" })
+    <br />
+    @Html.Label("Şifre")
+    @Html.TextAreaFor(x => x.Şifre, new { @class = "form-control p-3" })
+    <br />
+    <button class="btn btn-outline-dark">Güncelle</button>
+</form>
+

@@ -1,0 +1,65 @@
+﻿@using Cv.Mvc.Project.Models
+@model List<FileModel>
+@{
+
+    Layout = null;
+}
+
+<head>
+    <meta charset="utf-8">
+    <title>CV Projesi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="/Template/CvTemp/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/Template/CvTemp/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/Template/CvTemp/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/Template/CvTemp/css/style.css" rel="stylesheet">
+</head>
+<br />
+<h2>CV İndir</h2>
+<br />
+<table>
+    <tr>
+        <th>Dosya Adı</th>
+    </tr>
+    <br />
+    @foreach (FileModel file in Model)
+    {
+        <tr>
+            <td>@file.FileName</td>
+            <td>@Html.ActionLink("Download", "DownloadFile", new { fileName = file.FileName })</td>
+        </tr>
+    }
+</table>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="/Template/CvTemp/lib/typed/typed.min.js"></script>
+<script src="/Template/CvTemp/lib/easing/easing.min.js"></script>
+<script src="/Template/CvTemp/lib/waypoints/waypoints.min.js"></script>
+<script src="/Template/CvTemp/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="/Template/CvTemp/lib/isotope/isotope.pkgd.min.js"></script>
+<script src="/Template/CvTemp/lib/lightbox/js/lightbox.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="/Template/CvTemp/mail/jqBootstrapValidation.min.js"></script>
+<script src="/Template/CvTemp/mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="/Template/CvTemp/js/main.js"></script>

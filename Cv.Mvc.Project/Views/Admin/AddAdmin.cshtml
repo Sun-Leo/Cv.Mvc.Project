@@ -1,0 +1,29 @@
+﻿@using Cv.Mvc.Project.Models
+@model TblAdmin
+@{
+    ViewBag.Title = "AddAdmin";
+    Layout = "~/Views/Admin_Layout.cshtml";
+}
+
+<form method="post">
+    <div class="form-row">
+        <div class="control-group col-sm-12">
+            <input type="text" class="form-control p-3" name="KullanıcıAdı" placeholder="Kullanıcı Adı"
+                   required="required" data-validation-required-message="Lütfen Kullanıcı Adı Girin.." />
+            <p class="help-block text-danger"></p>
+        </div>
+    </div>
+    <div class="control-group">
+        <input type="password" class="form-control p-3" name="Şifre" placeholder="Şifre"
+               required="required" data-validation-required-message="Lütfen Şifre Girin.." />
+        <p class="help-block text-danger"></p>
+    </div>
+    <div>
+        <button class="btn btn-outline-dark" type="submit" id="sendMessageButton">
+
+            Ekle
+
+        </button>
+    </div>
+</form>
+

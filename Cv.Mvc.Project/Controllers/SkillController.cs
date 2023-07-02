@@ -25,6 +25,7 @@ namespace Cv.Mvc.Project.Controllers
         [HttpPost]
         public ActionResult AddSkill(TblSkılls tblSkılls)
         {
+            tblSkılls.Görsel = "progress-bar bg-dark";
             yetenekler.TAdd(tblSkılls);
             return RedirectToAction("Index");
         }
